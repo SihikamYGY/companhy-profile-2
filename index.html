@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamii Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/b6b49c6ad2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="js/script.js"></script> -->
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hero */
+  #hero {
+    background: url("assets/img/skycrapper.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+
+  #hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #hero .content {
+    position: relative;
+    z-index: 2;
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    /* cegah scroll horizontal */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container" data-aos="fade-down">
+      <a class="navbar-brand fw-bold" href="#">Kamii Company</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+          <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container content text-center text-lg-start " data-aos="fade-up">
+      <h1 class="display-4 fw-bold">Kamii Always Serve The Best For You</h1>
+      <p class="lead mt-3">
+        Kamii Company is always committed to providing the best service to every client. By prioritizing trust,
+        professionalism, and customer satisfaction, we consistently strive to be a reliable partner.
+      </p>
+      <div class="mt-4">
+
+        <a href="#contact" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container py-5 min-vh-100 d-flex align-items-center">
+    <div class="row flex-lg-row-reverse align-items-center g-5">
+      <div class="col-12 col-lg-6" data-aos="fade-left">
+        <img src="assets/img/team.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700"
+          height="500" loading="lazy">
+      </div>
+      <div class="col-12 col-lg-6" data-aos="fade-right">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Kamii Always Helps You Out</h1>
+        <p class="lead">Kamii Company is committed to delivering the best service to every client. By prioritizing
+          trust, professionalism, and customer satisfaction, we strive to be a reliable partner.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section id="team" class="container py-5 text-center min-vh-100 align-content-center" data-aos="fade-up">
+    <h1 class="display-5 fw-bold mb-5">Our Team</h1>
+    <div class="row g-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <img src="assets/img/19fcfa89729144ecaeb7774930c9568d.jpg" class="bd-placeholder-img rounded-circle img-fluid"
+          width="200" height="200" alt="Some PP Img">
+        <h2 class="fw-bold mt-3">Hikam</h2>
+        <p class="fw-semibold">Founder & CEO Kamii Company</p>
+        <p><a class="btn btn-primary" href="#">View details »</a></p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <img src="assets/img/46aab77dd65ff01512784fa893dd04ff.jpg" class="bd-placeholder-img rounded-circle img-fluid"
+          width="200" height="200" alt="Some PP Img">
+        <h2 class="fw-bold mt-3">Hazam</h2>
+        <p class="fw-semibold">UI/UX Kamii Company</p>
+        <p><a class="btn btn-primary" href="#">View details »</a></p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <img src="assets/img/5cf4c691dfda839f77ef073486a62845.jpg" class="bd-placeholder-img rounded-circle img-fluid"
+          width="200" height="200" alt="Some PP Img">
+        <h2 class="fw-bold mt-3">Hakim</h2>
+        <p class="fw-semibold">Manager Kamii Company</p>
+        <p><a class="btn btn-primary" href="#">View details »</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service -->
+  <section id="service" class="container py-5 text-center min-vh-100 align-content-center">
+    <div class="container px-4 py-5" id="featured-3" bis_skin_checked="1" data-aos="fade-up">
+      <h2 class="pb-2 fw-bold fs-1 ">Our Service</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" bis_skin_checked="1">
+        <div class="feature col" bis_skin_checked="1">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+            bis_skin_checked="1">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Custom Website</h3>
+          <p>Our custom website service delivers fully personalized solutions,
+            ensuring your site is not only visually appealing but also optimized for performance and scalability.</p>
+          <button type="button" q class="btn btn-primary">
+            Call to action
+            <i class="fa-solid fa-chevron-right ms-1"></i>
+          </button>
+        </div>
+        <div class="feature col" bis_skin_checked="1">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+            bis_skin_checked="1">
+            <i class="fa-solid fa-pencil-ruler"></i>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Website Packages</h3>
+          <p>Choose from our ready-made website packages, crafted to meet the needs of different businesses.
+            Each package includes a responsive design, essential features, and easy customization options.</p>
+          <button type="button" class="btn btn-primary">
+            Call to action
+            <i class="fa-solid fa-chevron-right ms-1"></i>
+          </button>
+        </div>
+        <div class="feature col" bis_skin_checked="1">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+            bis_skin_checked="1">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">UI/UX Design</h3>
+          <p>Our UI/UX design services ensure that your website not only looks great but also delivers an intuitive and
+            engaging user journey.
+            Every design is crafted with your target audience in mind.</p>
+          <button type="button" class="btn btn-primary">
+            Call to action
+            <i class="fa-solid fa-chevron-right ms-1"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container py-5 min-vh-100 align-content-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Kamii Here To Help You</h3>
+          <h1 class="display-5 fw-normal fs-1 lh-base"><span class="fw-bold">Discuss</span> With Our professional Team
+            And Good Cooperation</h1>
+          <p>Are You looking For Collaboration Or Good Quality Website Project With Kamii Company? Reach Out To Us.</p>
+          <div class="d-flex align-items-center gap-3 mt-3">
+            <i class="fa-solid fa-envelope fa-3x"></i>
+            <div class="text-box d-flex align-items-center mt-3">
+              <p class="fw-bold">E-mail <br>
+                <span class="fw-medium text-primary">roisulhikamidn@gmail.com</span>
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-3">
+            <i class="fa-solid fa-phone fa-3x"></i>
+            <div class="text-box d-flex align-items-center mt-3">
+              <p class="fw-bold">Phone Number<br>
+                <span class="fw-medium text-primary">085777988877</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Username...">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Email...">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="Phone...">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" id="sendBtn">Get Reach</button>
+        </div>
+      </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <div class="row text-white">
+        <!-- Company Info -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h1 class="display-5 fs-1 fw-bold">Kamii Company™</h1>
+          <hr class="border-3 rounded">
+          <p>"Helps You To Trough Out Future Technology And Help You To Make A Good Website"</p>
+          <hr class="border-3 rounded">
+          <p class="fw-bold fs-3">Follow Us!!</p>
+          <div class="d-flex gap-3 text-decoration-none">
+            <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+            <a href="#"><i class="fa-solid fa-globe fa-xl"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="col-lg-6 col-md-6 mb-4 d-flex justify-content-evenly flex-wrap">
+          <div class="d-flex flex-column gap-3 me-4">
+            <h2>About</h2>
+            <ul class="list-unstyled">
+              <li>Mission</li>
+              <li>Vision</li>
+              <li>Planning</li>
+              <li>Analysis</li>
+            </ul>
+          </div>
+          <div class="d-flex flex-column gap-3 me-4">
+            <h2>Teams</h2>
+            <ul class="list-unstyled">
+              <li>Founder</li>
+              <li>UI/UX</li>
+              <li>Manager</li>
+              <li>Marketing</li>
+            </ul>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <h2>Services</h2>
+            <ul class="list-unstyled">
+              <li>Custom Website</li>
+              <li>Website Packages</li>
+              <li>UI/UX Design</li>
+              <li>Domain & Hosting Setup</li>
+            </ul>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <h2>Contact</h2>
+            <ul class="list-unstyled">
+              <li>roisulhikamidn@gmail.com</li>
+              <li>085777988877</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Google Maps -->
+        <div class="col-lg-3 col-12 rounded">
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.262370627266!2d106.878472!3d-6.558254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3ACW7J%2B83H!2sKarang%20Tengah%2C%20Kec.%20Babakan%20Madang%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016810!5e0!3m2!1sen!2sid!4v1695456789012!5m2!1sen!2sid"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <hr class="border-5 rounded border-gray ">
+      <div class="row text-white">
+        <div class="col-md-4">
+          <p>Privacy Policy | Our History | What We Do</p>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          © 2025 Kamii Company All Right Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
